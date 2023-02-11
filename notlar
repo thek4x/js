@@ -1,0 +1,16 @@
+
+    iç içe fonksiyonlarda this kullanamazsın contex olur bunun için ya es5teki gibi
+    bir üst fonksiyonda this'i set ediceksin bideğişkene yada es6daki arrow functionları kullancan
+    
+es6da array functionlara bak
+
+immediate fonksiyonlar . yani sadece bir kez çalışacak fonksiyonlar
+(function(){
+
+})()
+(function(){
+}()}
+--------------------------------------------------------------------------------------------------
+find
+findIndex
+from fonksiyonlarına bak

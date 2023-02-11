@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <style>
+            .koltuk {
+                width: 5px;
+                height: 25px;
+                background: #2a2525;
+                margin: 4px;
+                border-radius: 3px;
+                box-shadow: 0px 0px 5px #ccc;
+                margin-bottom: 10px;
+            }
+
+            body {
+                background-color: #292929;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                color: #fff;
+            }
+
+            .koltuk:nth-of-type(2) {
+                margin-right: 15px;
+            }
+
+            .koltuk:nth-last-of-type(2) {
+                margin-left: 15px;
+            }
+            .row.d-flex:nth-of-type(4) {
+                border-bottom: dashed 2px #cccccc29;
+                margin-bottom: 5px;
+            }
+            .koltuk.secili {
+                background: #ffd494;
+            }
+            .koltuk.dolu{
+                background:antiquewhite
+            }
+
+            .row.d-flex:nth-of-type(2) {
+                border-bottom: dashed 2px #cccccc29;
+                margin-bottom: 5px;
+            }
+
+            .koltuk.secili {
+                background: #ffd494;
+            }
+
+
+
+            .koltuk.dolu {
+                background: antiquewhite;
+            }
+
+            .koltuk:not(.dolu):hover {
+                cursor: pointer;
+                transform: scale3d(1.2, 1.2, 1.2);
+                background: #060606;
+            }
+
+            * {
+                transition: all 0.3s ease;
+            }
+
+            select.form-control {
+                color: #fff;
+                background: #302c2c;
+                text-align: center;
+                font-weight: 600;
+            }
+            .backline {
+                background: #f7f7f7;
+                height: 50px;
+                margin-bottom: 10px;
+                box-shadow: 0px 0px 5px 3px #666262;
+            }
+            .options {
+                background: #333;
+                margin: 10px;
+                border-radius: 5px;
+                border: solid 2px #ccccccb5;
+                justify-content: center;
+            }
+
+            .options div {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .options div.secildi {
+                background: #7c5823;
+            }
+
+            .options div.bos {
+                background: #2a2525;
+            }
+
+            .options div.dolu {
+                background: #fff;
+                color: #000;
+            }
+            .fiyatlar span {
+                color: #ccff00;
+                font-weight: bold;
+            }
+
+            .fiyatlar {
+                font-size: 15px;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            .options div {
+                padding: 10px;
+                margin: 10px;
+                border-radius: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container m-auto">
+        <div class="col-6 m-auto">
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="backline w-50"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="koltuk secili"></div>
+                <div class="koltuk dolu"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+                <div class="koltuk"></div>
+            </div>
+
+            <div class="row d-flex justify-content-center col-6 m-auto my-3">
+                <div class="col-12 salonlar">
+                    <select class="form-control">
+                        <option value="10">-Salon 1-</option>
+                        <option value="20">-Salon 2-</option>
+                        <option value="30">-Salon 3-</option>
+                    </select>
+                </div>
+                <div class="d-flex options">
+                    <div class="secildi">seçili</div>
+                    <div class="bos">bos</div>
+                    <div class="dolu">dolu</div>
+                </div>
+                <div class="col-12 fiyatlar">
+                    <p><span class="amount">3</span> adet koltuk için fiyat: <span class="price">30TL</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>    
+</body>
+</html>

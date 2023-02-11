@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    let checkNumber = {
+        min: 0,
+        max: 100,
+        check: function (sayi) {
+            console.log(sayi);
+            if (typeof sayi != 'number')
+            {
+                return false;
+            }
+            return sayi > this.min && sayi < this.max;
+        }
+    };
+    let newRule = {min: 10, max: 50};
+    console.log(checkNumber.check.call(newRule, 0));
+</script>
+</body>
+</html>

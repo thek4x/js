@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    class quizApp
+    {
+        constructor(questions) {
+            this.questions = questions;
+            this.index = 0;
+            this.score = 0;
+        }
+
+        isFinished() {
+            return this.index == questions.length;
+        }
+
+        get soru() {
+            return this.questions[this.index];
+        }
+
+        checkAnswer(answer) {
+            return questions[this.index][2] == answer;
+        }
+
+        set guess(answer) {
+            let check = this.checkAnswer(answer);
+            if (check)
+            {
+                console.log(`${this.questions[this.index][0]} | cevap: ${this.questions[this.index][2]} | yanıtınız: doğru`);
+                this.index++;
+                this.skore++;
+
+            } else {
+                console.log(`${this.questions[this.index][0]} | cevap: ${this.questions[this.index][2]} | yanıtınız: YANLIŞ`);
+            }
+            return check;
+        }
+    }
+    let questions = [
+        ["birinci soru", ["a", "b", "c"], "a"],
+        ["ikinci soru", ["a", "b", "c"], "b"],
+        ["ucuncu soru", ["a", "b", "c"], "c"]
+    ];
+
+    let quiz = new quizApp(questions);
+
+    quiz.guess = "a";
+    quiz.guess = "a";
+//    quiz.guess = "answer girdim";
+
+</script>
+</body>
+</html>
